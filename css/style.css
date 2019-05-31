@@ -240,3 +240,186 @@ margin-top: 10px;
 .logo_foot2 {
   margin-top: 80px;
 }
+
+@media (min-width: 641px) and (max-width: 960px) {
+  body {
+    max-width: 768px;
+  }
+
+  header {
+    height: 959px;
+    background-image: url(../img/foorball768.jpg);
+  }
+
+  .logo {
+    width: 205px;
+    height: 60px;
+  }
+
+  h2.motto1, h2.motto2 {
+    font-size: 64px;
+  }
+  .motto1 {
+  	margin-left: 11.7%;
+
+  }
+
+  .motto2 {
+  	margin-left: 25.8%;
+  }
+
+  div.buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button {
+    width: 40%;
+    height: 76px;
+  margin: 0 15px;
+  }
+
+  .apple::before {
+    width: 42px;
+    height: 46px;
+    margin-top: 15px;
+
+  }
+
+  .google::before {
+    width: 42px;
+    height: 46px;
+    margin-top: 15px;
+
+  }
+
+
+  .button__label {
+  	width: 35%;
+    font-size: 14px;
+    margin-top: 15px;
+
+  }
+
+  .name {
+    position: relative;
+  }
+
+  .pic {
+  	position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+
+  .name h2 {
+  	font-size: 80px;
+    margin-left: 290px;
+    margin-top: 86px;
+  }
+
+  .list h3 {
+  	font-size: 32px;
+  	margin-left: 290px;
+  }
+  .list p {
+  	font-size: 16px;
+    margin-left: 290px;
+  }
+  .list {
+  	padding: 10px 20px;
+  }
+
+  .name2 h2 {
+    margin-left: 34px;
+    margin-right: 340px;
+  }
+  .list4 h3, .list5 h3, .list6 h3, .list4 p, .list5 p, .list6 p {
+    margin-left: 34px;
+    margin-right: 340px;
+  }
+
+  .pic2 {
+    right: 0;
+    top: -50px;
+    text-align: right;
+  }
+
+  .list h3::before {
+    content: "";
+    width: 20px;
+     height: 18px;
+     display: inline-block;
+     float: left;
+     margin:8px 5px 0 0;
+    background:url(../img/sprite.png);
+    background-repeat: no-repeat;
+  }
+
+  .list1 h3::before, .list4 h3::before {background-position:-85px 0;}
+  .list2 h3::before, .list5 h3::before {background-position:-58px 0;}
+  .list3 h3::before {background-position:-31px 0;}
+  .list6 h3::before {background-position:-10px 0;}
+
+  .cube {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    background-color: #5e42b0;
+    left: 33px;
+    bottom: -26px;
+
+  }
+
+  .instr h3 {
+  	font-size: 80px;
+  }
+
+  .instr p {
+  	font-size: 24px;
+  }
+
+  .text {
+  	padding: 0px 100px 80px 20px;
+  }
+
+  footer {
+    height: 958px;
+    background-image: url(../img/game768.jpg);
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .cube2 {
+    width: 130px;
+    height: 130px;
+    background-color: #6f4fcb;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 125px;
+  }
+
+  .logo_foot {
+  margin-top: 20px;
+  width: 100px;
+  height: 85px;
+
+  }
+
+  .download {
+    margin-top: 82px;
+    font-size: 80px;
+  }
+
+  .motto3 {
+    font-size: 36px;
+    margin-bottom: 285px;
+  }
+
+  .logo_foot2 {
+    margin-top: 80px;
+    width: 205px;
+    height: 60px;
+  }
+
+}
