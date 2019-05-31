@@ -243,7 +243,7 @@ margin-top: 10px;
 
 @media (min-width: 641px) and (max-width: 960px) {
   body {
-    max-width: 768px;
+    max-width: 960px;
   }
 
   header {
