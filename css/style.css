@@ -347,19 +347,19 @@ margin-top: 10px;
 
   .list h3::before {
     content: "";
-    width: 20px;
-     height: 18px;
+    width: 22px;
+     height: 25px;
      display: inline-block;
      float: left;
-     margin:8px 5px 0 0;
-    background:url(../img/sprite.png);
+     margin: 12px 5px 0 0;
+    background:url(../img/sprite768-1.png);
     background-repeat: no-repeat;
   }
 
-  .list1 h3::before, .list4 h3::before {background-position:-85px 0;}
-  .list2 h3::before, .list5 h3::before {background-position:-58px 0;}
-  .list3 h3::before {background-position:-31px 0;}
-  .list6 h3::before {background-position:-10px 0;}
+  .list1 h3::before, .list4 h3::before {background-position: 0 0;}
+  .list2 h3::before, .list5 h3::before {background-position:-24px 0;}
+  .list3 h3::before {background-position:-48px 0;}
+  .list6 h3::before {background-position:-72px 0;}
 
   .cube {
     position: absolute;
@@ -370,6 +370,20 @@ margin-top: 10px;
     bottom: -26px;
 
   }
+  div.num::before {
+    content: "";
+    width: 29px;
+     height: 33px;
+     display: inline-block;
+     float: left;
+     margin: 41px 43px;
+    background:url(../img/sprite768-2.png);
+    background-repeat: no-repeat;
+  }
+
+  div.num1::before {background-position: 0 0;}
+  div.num2::before {background-position:-32px 0;}
+  div.num3::before {background-position: -64px 0;}
 
   .instr h3 {
   	font-size: 80px;
