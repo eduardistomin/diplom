@@ -310,6 +310,7 @@ margin-top: 10px;
     top: 0;
     left: 0;
 
+
   }
 
   .name h2 {
@@ -343,7 +344,10 @@ margin-top: 10px;
     right: 0;
     top: -50px;
     text-align: right;
+
   }
+
+
 
   .list h3::before {
     content: "";
@@ -434,6 +438,240 @@ margin-top: 10px;
     margin-top: 80px;
     width: 205px;
     height: 60px;
+  }
+
+}
+
+@media (min-width: 961px) {
+
+  body {
+    max-width: 1920px;
+  }
+
+  header {
+    height: 960px;
+    background-image: url(../img/foorball1920.jpg);
+  }
+
+  .logo {
+    width: 190px;
+    height: 52px;
+  }
+
+  h2.motto1, h2.motto2 {
+    font-size: 90px;
+  }
+  .motto1 {
+    margin-left: 10%;
+
+  }
+
+  .motto2 {
+    margin-left: 33.5%;
+  }
+
+  div.buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button {
+    width: 310px;
+    height: 78px;
+  margin: 0 15px;
+  }
+
+  .apple::before {
+    width: 42px;
+    height: 46px;
+    margin-top: 15px;
+
+  }
+
+  .google::before {
+    width: 42px;
+    height: 46px;
+    margin-top: 15px;
+
+  }
+
+
+  .button__label {
+  	width: 35%;
+    font-size: 14px;
+    margin-top: 15px;
+
+  }
+
+  .name {
+    position: relative;
+  }
+
+  .pic {
+    position: absolute;
+    top: 0;
+    left: 390px;
+
+
+  }
+
+  .name h2 {
+    font-size: 80px;
+    margin-left: 1000px;
+    margin-top: 115px;
+  }
+
+  .list h3 {
+    font-size: 36px;
+    margin-left: 1000px;
+  }
+  .list p {
+    font-size: 20px;
+    margin-left: 1000px;
+  }
+  .list {
+    padding: 40px 20px;
+  }
+
+  .name2 h2 {
+    margin-left: 190px;
+
+  }
+  .list4 h3, .list5 h3, .list6 h3, .list4 p, .list5 p, .list6 p {
+    margin-left: 190px;
+    margin-right: 985px;
+  }
+
+  .pic2 {
+    right: 125px;
+    top: -80px;
+    text-align: right;
+
+  }
+
+
+  .list h3::before {
+    content: "";
+    width: 22px;
+     height: 25px;
+     display: inline-block;
+     float: left;
+     margin: 14px 5px 0 0;
+    background:url(../img/sprite768-1.png);
+    background-repeat: no-repeat;
+  }
+
+  .list1 h3::before, .list4 h3::before {background-position: 0 0;}
+  .list2 h3::before, .list5 h3::before {background-position:-24px 0;}
+  .list3 h3::before {background-position:-48px 0;}
+  .list6 h3::before {background-position:-72px 0;}
+
+  .cube {
+    position: absolute;
+    width: 168px;
+    height: 155px;
+    background-color: #5e42b0;
+    left: auto;
+    right: -80px;
+    top: 210px;
+  }
+
+  .cube12 {
+      left:-80px;
+      top: 210px;
+  }
+
+  div.num::before {
+    content: "";
+    width: 29px;
+     height: 33px;
+     display: inline-block;
+     float: left;
+     margin: 61px 69px;
+    background:url(../img/sprite768-2.png);
+    background-repeat: no-repeat;
+  }
+
+  div.num1::before {background-position: 0 0;}
+  div.num2::before {background-position:-32px 0;}
+  div.num3::before {background-position: -64px 0;}
+
+  div.instr {
+  display: flex;
+  box-sizing: border-box;
+  }
+
+  div.instr_image {
+    width: 50%;
+    box-sizing: border-box;
+  }
+  div.text {
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  div.instr2 {
+    flex-direction: row-reverse;
+  }
+
+
+  .instr h3 {
+  	font-size: 80px;
+  }
+
+  .instr p {
+  	font-size: 24px;
+  }
+
+  .text {
+    padding: 150px 180px 80px 126px;
+  }
+
+  footer {
+    height: 960px;
+    background-image: url(../img/game1920.jpg);
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  div.foot_cont {
+    display: flex;
+      justify-content: center;
+  }
+
+
+  .cube2 {
+    width: 130px;
+    height: 130px;
+    background-color: #6f4fcb;
+    border-radius: 20px;
+    text-align: center;
+    margin: 50px 30px;
+  }
+
+  .logo_foot {
+  margin-top: 20px;
+  width: 100px;
+  height: 85px;
+
+  }
+
+  .download {
+    margin-top: 82px;
+    font-size: 80px;
+    line-height: 0;
+  }
+
+  .motto3 {
+    font-size: 36px;
+    margin-bottom: 285px;
+    line-height: 0;
+  }
+
+  .logo_foot2 {
+    margin-top: 250px;
+    width: 190px;
+    height: 55px;
   }
 
 }
