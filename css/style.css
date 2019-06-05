@@ -10,13 +10,12 @@ main {
 
 header {
   margin: 0 auto;
-
-  height: 568px;
   background-color: #0b0f33;
   background-image: url(../img/football320.jpg);
   background-size: cover;
   color: #ffffff;
   text-transform: uppercase;
+  padding-bottom: 85px;
 }
 
 .logo {
@@ -233,7 +232,7 @@ position: relative;
 
 footer {
   margin: 0 auto;
-  height: 568px;
+  padding-bottom: 10px;
   background-color: #0b0f33;
   background-image: url(../img/game320.jpg);
   background-size: cover;
@@ -278,7 +277,7 @@ margin-top: 10px;
 @media (min-width: 641px) and (max-width: 960px) {
 
   header {
-    height: 959px;
+    padding-bottom: 90px;
     background-image: url(../img/foorball768.jpg);
   }
 
@@ -425,7 +424,7 @@ margin-top: 10px;
   }
 
   footer {
-    height: 958px;
+    padding-bottom: 22px;
     background-image: url(../img/game768.jpg);
     padding-top: 100px;
     text-align: center;
@@ -470,7 +469,7 @@ margin-top: 10px;
 
 
   header {
-    height: 960px;
+    padding-bottom: 110px;
     background-image: url(../img/foorball1920.jpg);
   }
 
@@ -647,7 +646,7 @@ margin-top: 10px;
   }
 
   footer {
-    height: 960px;
+    padding-bottom: 50px;
     background-image: url(../img/game1920.jpg);
     padding-top: 100px;
     text-align: center;
