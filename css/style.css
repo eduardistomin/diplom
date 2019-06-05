@@ -3,7 +3,7 @@ body {
   margin: 0 auto;
 }
 
-div.conteiner {
+main {
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -26,18 +26,20 @@ header {
 	margin-bottom: 133px;
 }
 
-h2.motto1, h2.motto2 {
+.motto {
 
   font-weight: 700;
   font-size: 30px;
 }
 
 .motto1 {
+  display: block;
 	margin-left: 6.3%;
 
 }
 
 .motto2 {
+  display: block;
 	margin-left: 12.5%;
 }
 
@@ -108,12 +110,48 @@ h2.motto1, h2.motto2 {
 }
 
 .list h3 {
+  display: inline-block;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 23px;
 	color: #c1c1c1;
+vertical-align: middle;
 
 }
+
+.number {
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px
+
+}
+
+.number::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #5e42b0;
+  border-radius: 5px;
+  bottom: -3px;
+
+}
+
+.list3 .number::after {
+  background-color: #ffffff;
+}
+
+.list6 .number {
+  color: #5e42b0;
+}
+
+.list6 .number::after {
+  background-color: #ffffff;
+}
+
 .list p {
 	font-size: 15px;
 }
@@ -121,21 +159,6 @@ h2.motto1, h2.motto2 {
 	padding: 60px 20px;
 }
 
-.list h3::before {
-  content: "";
-  width: 20px;
-   height: 18px;
-   display: inline-block;
-   float: left;
-   margin:8px 5px 0 0;
-  background:url(../img/sprite.png);
-  background-repeat: no-repeat;
-}
-
-.list1 h3::before, .list4 h3::before {background-position:-85px 0;}
-.list2 h3::before, .list5 h3::before {background-position:-58px 0;}
-.list3 h3::before {background-position:-31px 0;}
-.list6 h3::before {background-position:-10px 0;}
 
 .list2, .list5 {
 	background-color: #f5f4f9;
@@ -157,34 +180,41 @@ h2.motto1, h2.motto2 {
 	width: 100%;
   }
 
-div.instr_image {
+.instr_image {
 position: relative;
 }
 
 .cube {
+  display: flex;
   position: absolute;
   width: 70px;
   height: 70px;
   background-color: #5e42b0;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
   left: 20px;
   bottom: -10px;
 
 }
 
-div.num::before {
-  content: "";
-  width: 18px;
-   height: 20px;
-   display: inline-block;
-   float: left;
-   margin: 25px 25px;
-  background:url(../img/sprite2.png);
-  background-repeat: no-repeat;
+.num {
+  margin: auto;
+  position: relative;
 }
 
-div.num1::before {background-position:-44px 0;}
-div.num2::before {background-position:-20px 0;}
-div.num3::before {background-position: 0 0;}
+.num::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #ffffff;
+  opacity: 0.3;
+  border-radius: 5px;
+  bottom: -5px;
+}
 
 .instr h3 {
 	text-transform: uppercase;
@@ -257,7 +287,7 @@ margin-top: 10px;
     height: 60px;
   }
 
-  h2.motto1, h2.motto2 {
+  .motto {
     font-size: 64px;
   }
   .motto1 {
@@ -269,7 +299,7 @@ margin-top: 10px;
   	margin-left: 25.8%;
   }
 
-  div.buttons {
+  .buttons {
     display: flex;
     justify-content: center;
   }
@@ -322,7 +352,7 @@ margin-top: 10px;
 
   .list h3 {
   	font-size: 32px;
-  	margin-left: 290px;
+
   }
   .list p {
   	font-size: 16px;
@@ -336,7 +366,8 @@ margin-top: 10px;
     margin-left: 34px;
     margin-right: 340px;
   }
-  .list4 h3, .list5 h3, .list6 h3, .list4 p, .list5 p, .list6 p {
+
+  .list4 p, .list5 p, .list6 p {
     margin-left: 34px;
     margin-right: 340px;
   }
@@ -348,23 +379,23 @@ margin-top: 10px;
 
   }
 
-
-
-  .list h3::before {
-    content: "";
-    width: 22px;
-     height: 25px;
-     display: inline-block;
-     float: left;
-     margin: 12px 5px 0 0;
-    background:url(../img/sprite768-1.png);
-    background-repeat: no-repeat;
+  .number {
+    font-size: 18px;
+    margin-right: 13px;
+    margin-left: 290px;
   }
 
-  .list1 h3::before, .list4 h3::before {background-position: 0 0;}
-  .list2 h3::before, .list5 h3::before {background-position:-24px 0;}
-  .list3 h3::before {background-position:-48px 0;}
-  .list6 h3::before {background-position:-72px 0;}
+  .number::after {
+    height: 5px;
+    background-color: #5e42b0;
+    border-radius: 5px;
+    bottom: -6px;
+
+  }
+  .list4 .number, .list5 .number, .list6 .number {
+    margin-left: 34px;
+
+  }
 
   .cube {
     position: absolute;
@@ -373,22 +404,13 @@ margin-top: 10px;
     background-color: #5e42b0;
     left: 33px;
     bottom: -26px;
+    font-size: 24px;
 
   }
-  div.num::before {
-    content: "";
-    width: 29px;
-     height: 33px;
-     display: inline-block;
-     float: left;
-     margin: 41px 43px;
-    background:url(../img/sprite768-2.png);
-    background-repeat: no-repeat;
-  }
-
-  div.num1::before {background-position: 0 0;}
-  div.num2::before {background-position:-32px 0;}
-  div.num3::before {background-position: -64px 0;}
+.num::after {
+  height: 5px;
+  bottom: -9px;
+}
 
   .instr h3 {
   	font-size: 80px;
@@ -457,7 +479,7 @@ margin-top: 10px;
     height: 52px;
   }
 
-  h2.motto1, h2.motto2 {
+  .motto {
     font-size: 90px;
   }
   .motto1 {
@@ -469,7 +491,7 @@ margin-top: 10px;
     margin-left: 33.5%;
   }
 
-  div.buttons {
+  .buttons {
     display: flex;
     justify-content: center;
   }
@@ -523,7 +545,7 @@ margin-top: 10px;
 
   .list h3 {
     font-size: 36px;
-    margin-left: 52vw;
+
   }
   .list p {
     font-size: 20px;
@@ -537,7 +559,25 @@ margin-top: 10px;
     margin-left: 10vw;
 
   }
-  .list4 h3, .list5 h3, .list6 h3, .list4 p, .list5 p, .list6 p {
+  .number {
+    font-size: 18px;
+    margin-right: 13px;
+    margin-left: 52vw;
+  }
+
+  .number::after {
+    height: 5px;
+    background-color: #5e42b0;
+    border-radius: 5px;
+    bottom: -6px;
+
+  }
+  .list4 .number, .list5 .number, .list6 .number {
+    margin-left: 10vw;
+
+  }
+
+  .list4 p, .list5 p, .list6 p {
     margin-left: 10vw;
     margin-right: 51vw;
   }
@@ -552,21 +592,7 @@ margin-top: 10px;
   width: 51vw;
 }
 
-  .list h3::before {
-    content: "";
-    width: 22px;
-     height: 25px;
-     display: inline-block;
-     float: left;
-     margin: 14px 5px 0 0;
-    background:url(../img/sprite768-1.png);
-    background-repeat: no-repeat;
-  }
 
-  .list1 h3::before, .list4 h3::before {background-position: 0 0;}
-  .list2 h3::before, .list5 h3::before {background-position:-24px 0;}
-  .list3 h3::before {background-position:-48px 0;}
-  .list6 h3::before {background-position:-72px 0;}
 
   .cube {
     position: absolute;
@@ -575,44 +601,35 @@ margin-top: 10px;
     background-color: #5e42b0;
     left: auto;
     right: -80px;
-    top: 210px;
+    top: 11vw;
+    font-size: 24px;
   }
 
   .cube12 {
       left:-80px;
-      top: 210px;
+      top: 11vw;
   }
 
-  div.num::before {
-    content: "";
-    width: 29px;
-     height: 33px;
-     display: inline-block;
-     float: left;
-     margin: 61px 69px;
-    background:url(../img/sprite768-2.png);
-    background-repeat: no-repeat;
+  .num::after {
+    height: 5px;
+    bottom: -9px;
   }
 
-  div.num1::before {background-position: 0 0;}
-  div.num2::before {background-position:-32px 0;}
-  div.num3::before {background-position: -64px 0;}
-
-  div.instr {
+  .instr {
   display: flex;
   box-sizing: border-box;
   }
 
-  div.instr_image {
+  .instr_image {
     width: 50%;
     box-sizing: border-box;
   }
-  div.text {
+  .text {
     width: 50%;
     box-sizing: border-box;
   }
 
-  div.instr2 {
+  .instr2 {
     flex-direction: row-reverse;
   }
 
@@ -626,7 +643,7 @@ margin-top: 10px;
   }
 
   .text {
-    padding: 150px 180px 80px 126px;
+    padding: 8vw 9.4vw 4.2vw 126px;
   }
 
   footer {
@@ -636,7 +653,7 @@ margin-top: 10px;
     text-align: center;
   }
 
-  div.foot_cont {
+  .foot_cont {
     display: flex;
       justify-content: center;
   }
